@@ -1,0 +1,21 @@
+/* @media メディアクエリ（レスポンシブ対応） 
+  レイアウトが切り替わる横幅：ブレイクポイント
+  幅を固定せずにレイアウトによって柔軟に幅を変化させる：リキッドレイアウト*/
+@media(max-width:600px){ /*600px以下の画面用の指定*/
+  .description img {
+    float: none; /*回り込みを解除*/
+    display: block; /*表示をブロック状態にする*/
+    margin: 0 auto; /*画面を中央に揃える*/
+  }
+  header{
+    padding: 5px;
+  }
+  header h1{
+    font-size: 12px;
+  }
+  .songs li{
+    float: none;
+    /* inherit値：親要素のスタイルを引き継ぐ */
+    width: inherit;
+  }
+}
